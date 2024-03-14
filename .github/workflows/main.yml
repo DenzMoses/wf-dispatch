@@ -2,7 +2,8 @@ name: Repository Dispatch
 on:
   push:
   repository_dispatch:
-    types: [my-event]
+    types: 
+      -  my-event
 jobs:
   myEvent:
     runs-on: ubuntu-latest
